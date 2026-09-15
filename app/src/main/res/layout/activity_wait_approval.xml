@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/asset2mdpi"
+    tools:context="com.ebtesam.iutbloodaid.WaitApproval">
+
+    <TextView
+        android:id="@+id/ec"
+        android:layout_width="338dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="144dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/quicksand_medium"
+        android:paddingLeft="5dp"
+        android:text="Eligibility Criteria"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="332dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="236dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/quicksand_light"
+        android:padding="5dp"
+        android:text="Please visit the IUT Medical Center as soon as possible with all your medical documents proving that you meet the criteria mentioned above."
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/okay"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="108dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.371"
+        app:srcCompat="@drawable/okay" />
+
+    <ScrollView
+        android:layout_width="393dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ec">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ec_full"
+                android:layout_width="338dp"
+                android:layout_height="433dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/quicksand_light"
+                android:padding="5dp"
+                android:text="Must be at least 16 years old (16- and 17-year-olds must bring a signed permission form from a  parent or guardian, if required by state or school).
+        Weigh at least 110 pounds.
+        Be in good general health.
+        For your safety and to ensure a positive donation experience, make sure you eat within two hours ahead of your donation. Drink plenty of water that day and 24 to 48 hours beforehand. Feel free to help yourself to something to eat and drink in our refreshment area.
+        Bring your ID—something with your name and one of the following: date of birth, donor ID number or your photo.
+        You must wait eight weeks between whole blood donations. Learn more about specific intervals for other types of donation.
+        You should not be under the influence of alcohol or recreational drugs at the time of donation."
+                android:textColor="@android:color/background_light"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="77dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

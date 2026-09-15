@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/asset2mdpi"
+    tools:context="com.ebtesam.iutbloodaid.SearchActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="379dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchbybg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asset4mdpi" />
+
+    <TextView
+        android:id="@+id/searchbybg"
+        android:layout_width="89dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Blood Group"
+        android:textColor="@color/text_primary"
+        app:layout_constraintEnd_toStartOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/bg"
+        android:layout_width="114dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="18dp"
+        android:entries="@array/blood_groups"
+        android:textAlignment="viewEnd"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/searchbtn"
+        app:layout_constraintStart_toEndOf="@+id/searchbybg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/searchbtn"
+        android:layout_width="91dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="56dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Search"
+        android:textColor="@color/text_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

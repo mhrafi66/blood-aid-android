@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">IUT Blood Aid</string>
+    <string name="app_logo_description">IUT Blood Aid logo</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dhaay">Don\'t have an account yet?</string>
+    <string-array name="blood_groups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+
+
+    </string-array>
+
+</resources>
