@@ -44,37 +44,59 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()){
+        int id = v.getId();
 
-            case R.id.loginButton:
-                userLogIn();
-                break;
+        if (id == R.id.loginButton) {
 
-            case R.id.forgotPass:
-                final String email=emailEditText.getText().toString().trim();
-                mAuth.sendPasswordResetEmail(email)
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(LoginActivity.this,"Password reset instructions sent. Please check your e-mail.",Toast.LENGTH_LONG).show();
-                                }else{
-                                    Toast.makeText(LoginActivity.this,"Enter a valid e-mail address.",Toast.LENGTH_LONG).show();
+            userLogIn();
+
+        } else if (id == R.id.forgotPass) {
+
+            final String email =
+                    emailEditText
+                            .getText()
+                            .toString()
+                            .trim();
+
+            mAuth.sendPasswordResetEmail(email)
+                    .addOnCompleteListener(
+                            new OnCompleteListener<Void>() {
+
+                                @Override
+                                public void onComplete(
+                                        @NonNull Task<Void> task
+                                ) {
+
+                                    if (task.isSuccessful()) {
+
+                                        Toast.makeText(
+                                                LoginActivity.this,
+                                                "Password reset instructions sent. Please check your e-mail.",
+                                                Toast.LENGTH_LONG
+                                        ).show();
+
+                                    } else {
+
+                                        Toast.makeText(
+                                                LoginActivity.this,
+                                                "Enter a valid e-mail address.",
+                                                Toast.LENGTH_LONG
+                                        ).show();
+                                    }
                                 }
                             }
-                        });
-                break;
+                    );
 
-            case R.id.signupButton:
-                Intent intent = new Intent(getApplicationContext(),SignUpActivity.class);
-                startActivity(intent);
-                break;
+        } else if (id == R.id.signupButton) {
 
+            Intent intent =
+                    new Intent(
+                            getApplicationContext(),
+                            SignUpActivity.class
+                    );
 
+            startActivity(intent);
         }
-
-
-
     }
 
     private void userLogIn() {

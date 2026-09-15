@@ -47,42 +47,36 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.findDonor:
-                Intent intent = new Intent(ChooseActivity.this,SearchActivity.class);
-                startActivity(intent);
+    public void onClick(View view) {
 
-                break;
+        int id = view.getId();
 
-            case R.id.donorProfile:
+        if (id == R.id.findDonor) {
 
-            Intent profileIntent=new Intent(ChooseActivity.this,ProfileActivity.class);
-            startActivity(profileIntent);
-                break;
+            startActivity(
+                    new Intent(
+                            ChooseActivity.this,
+                            SearchActivity.class
+                    )
+            );
 
-            case R.id.regDonor:
-              //  Toast.makeText(ChooseActivity.this,"And crash!",Toast.LENGTH_LONG).show();
+        } else if (id == R.id.donorProfile) {
 
+            startActivity(
+                    new Intent(
+                            ChooseActivity.this,
+                            ProfileActivity.class
+                    )
+            );
 
+        } else if (id == R.id.regDonor) {
 
-
-
-
-                    Intent intent2 = new Intent(ChooseActivity.this, DonorReg.class);
-                    startActivity(intent2);
-
-
-
-
-
-                break;
-
-
-
+            startActivity(
+                    new Intent(
+                            ChooseActivity.this,
+                            DonorReg.class
+                    )
+            );
         }
-
-
-
     }
 }
