@@ -67,7 +67,7 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
 
 
 
-                        Toast.makeText(ChooseActivity.this,"You have already registered",Toast.LENGTH_LONG).show();
+
 
                     Intent intent2 = new Intent(ChooseActivity.this, DonorReg.class);
                     startActivity(intent2);

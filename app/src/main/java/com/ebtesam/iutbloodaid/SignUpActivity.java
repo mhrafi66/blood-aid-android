@@ -68,7 +68,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             passwordEditText.requestFocus();
             return;
         }
-        if(!email.endsWith("iut-dhaka.edu")){
+        if(!email.endsWith("@iut-dhaka.edu")){
             emailEditText.setError("Enter your IUT Email Address");
             emailEditText.requestFocus();
             return;

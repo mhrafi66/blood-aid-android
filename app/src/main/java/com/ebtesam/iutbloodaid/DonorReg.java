@@ -64,7 +64,7 @@ public class DonorReg extends AppCompatActivity {
         String bloodgp = spinner.getSelectedItem().toString();
         String sid = sidText.getText().toString();
         String status = "unapproved";
-        String elig="ineligible";
+        String elig="not eligible";
 
 
         Donor donor = new Donor(userId, email, name, sid, bloodgp, phone, status,elig);

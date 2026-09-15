@@ -55,7 +55,7 @@ public class ResultActivity extends AppCompatActivity {
 
                             String st=donor.getStatus();
                             String el=donor.getEligibility();
-                            if(st.equals("approved") && el.equals("eligible") ) {
+                            if("approved".equals(st) && "eligible".equals(el)) {
                                 listOfDonors.add(donor);
 
                                // editText.setText(donor.getName() + " " + editText.getText());

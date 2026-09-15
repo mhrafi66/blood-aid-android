@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
             emailEditText.requestFocus();
             return;
         }
-        if(!email.endsWith("iut-dhaka.edu")){
+        if(!email.endsWith("@iut-dhaka.edu")){
             emailEditText.setError("Invalid E-mail Address");
             emailEditText.requestFocus();
             return;

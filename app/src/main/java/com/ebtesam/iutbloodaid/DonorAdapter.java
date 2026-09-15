@@ -53,7 +53,7 @@ public class DonorAdapter extends RecyclerView.Adapter<DonorAdapter.DonorHolder>
 
 
 
-        String nameofdonor = donors.get(listPosition).getSid();
+        String nameofdonor = donors.get(listPosition).getName();
         final String phoneofdonor=donors.get(listPosition).getPhone();
 
 
