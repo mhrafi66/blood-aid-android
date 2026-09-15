@@ -1,4 +1,4 @@
-package com.ebtesam.iutbloodaid;
+package io.github.mhrafi66.iutbloodaid;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;

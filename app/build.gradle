@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.ebtesam.iutbloodaid'
+    namespace 'io.github.mhrafi66.iutbloodaid'
     compileSdk 36
 
     defaultConfig {
-        applicationId 'com.ebtesam.iutbloodaid'
+        applicationId 'io.github.mhrafi66.iutbloodaid'
         minSdk 23
         targetSdk 36
         versionCode 1

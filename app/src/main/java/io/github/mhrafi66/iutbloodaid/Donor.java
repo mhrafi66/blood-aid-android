@@ -1,4 +1,4 @@
-package com.ebtesam.iutbloodaid;
+package io.github.mhrafi66.iutbloodaid;
 
 public class Donor {
     private String userId;

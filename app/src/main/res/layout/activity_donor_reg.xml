@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/asset2mdpi"
-    tools:context="com.ebtesam.iutbloodaid.DonorReg">
+    tools:context="io.github.mhrafi66.iutbloodaid.DonorReg">
 
     <ImageView
         android:id="@+id/imageView4"

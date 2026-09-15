@@ -1,7 +1,7 @@
 # Firebase Setup
 
 1. Create a Firebase project.
-2. Register an Android app with package `com.ebtesam.iutbloodaid`.
+2. Register an Android app with package `io.github.mhrafi66.iutbloodaid`.
 3. Download `google-services.json`.
 4. Place it at `app/google-services.json`.
 5. Enable Email/Password authentication.
